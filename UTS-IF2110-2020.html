@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      font-family: 'Calisto MT', Georgia, Times, serif;
+    }
+    kbd {
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      padding: 0.1em 0.5em;
+      margin: 0 0.1em;
+      box-shadow: 0 1px 0px rgba(0,0,0,0.2), 0 0 0 2px #fff inset;
+      background-color: #eee;
+      height: 1rem;
+    }
+    pre {
+      border: 1px solid #888;
+      padding: 0 1ex;
+    }
+    .co {
+      color: #080;
+      font-style: italic;
+    }
+    .kw, .dt {
+      color: #008;
+      font-weight: bold;
+    }
+    .dv, .st {
+      color: #00f;
+    }
+    pre, code, kbd {
+      font-family: "Consolas", "Monaco", monospace;
+    }
+  </style>
+</head>
+<body>
+
+<h1 id="uts-if2110-2020">UTS IF2110 2020</h1>
+<p>Ujian Tengah Semester IF2110 Algoritma dan Struktur Data, Semester I 2020/2021</p>
+<h2 id="petunjuk">Petunjuk</h2>
+<ul>
+<li>Waktu: 120 menit (13:00&#8211;15:00)</li>
+<li>Boleh membuka diktat Notasi Algoritmik</li>
+<li>Untuk menuliskan karakter spesial, dapat digunakan <em>shortcut</em> <kbd>&#8862;</kbd><kbd>;</kbd> (di Windows), <kbd>^</kbd><kbd>&#8984;</kbd><kbd>Space</kbd> (di Mac), atau silakan salin &amp; tempel dari sini: &#8594; &#8592; &#8800; &#8804; &#8805;</li>
+</ul>
+<h2 id="bagian-i.-adt-matriks-notasi-algoritmik-bobot-25">Bagian I. ADT Matriks (Notasi Algoritmik, bobot: 25%)</h2>
+<p>Diberikan definisi dan spesifikasi ADT Matriks sebagai berikut:</p>
+<div class="sourceCode"><pre class="sourceCode pascal"><code class="sourceCode pascal"><span class="co">{ ADT Matriks }</span>
+<span class="kw">type</span> indeks: <span class="dt">integer</span> <span class="co">{ indeks baris dan kolom }</span>
+<span class="kw">constant</span> BrsMin: indeks = <span class="dv">0</span>
+<span class="kw">constant</span> BrsMax: indeks = <span class="dv">99</span>
+<span class="kw">constant</span> KolMin: indeks = <span class="dv">0</span>
+<span class="kw">constant</span> KolMax: indeks = <span class="dv">99</span>
+<span class="kw">type</span> el_type: <span class="dt">integer</span>
+<span class="kw">type</span> MATRIKS: 
+      &lt; Mem: matrix[BrsMin..BrsMax,KolMin..KolMax] <span class="kw">of</span> el_type,
+        NBrsEff: <span class="dt">integer</span> &gt; <span class="dv">0</span>, <span class="co">{ banyaknya/ukuran baris yg terdefinisi }</span>
+        NKolEff: <span class="dt">integer</span> &gt; <span class="dv">0</span>  <span class="co">{ banyaknya/ukuran kolom yg terdefinisi }</span> &gt; 
+<span class="co">{ Memori matriks yang dipakai selalu di &quot;ujung kiri atas&quot; }</span>
+
+<span class="co">{************ DEFINISI PROTOTIPE PRIMITIF ************}</span>
+<span class="co">{*** Konstruktor membentuk Matriks ***}</span>
+<span class="kw">procedure</span> MakeMATRIKS (input NB, NK: <span class="dt">integer</span>, output M: MATRIKS) 
+<span class="co">{ Membentuk sebuah Matriks &quot;kosong&quot; berukuran NB&#215;NK di &quot;ujung kiri atas&quot; </span>
+<span class="co">  memori.</span>
+<span class="co">  I.S. NB dan NK adalah valid untuk memori matriks yang dibuat.</span>
+<span class="co">  F.S. Matriks M terdefinisi dengan ukuran NB&#215;NK. }</span>
+
+<span class="co">{*** Selektor Matriks ***}</span>
+<span class="co">{*** Selektor Get ***}</span>
+<span class="kw">function</span> GetNBrsEff (M: MATRIKS) &#8594; <span class="dt">integer</span> 
+<span class="co">{ Mengirimkan banyaknya baris efektif M }</span>
+<span class="kw">function</span> GetNKolEff (M: MATRIKS) &#8594; <span class="dt">integer</span> 
+<span class="co">{ Mengirimkan banyaknya kolom efektif M }</span>
+<span class="kw">function</span> GetFirstIdxBrs (M: MATRIKS) &#8594; indeks 
+<span class="co">{ Mengirimkan indeks baris terkecil M }</span>
+<span class="kw">function</span> GetFirstIdxKol (M: MATRIKS) &#8594; indeks 
+<span class="co">{ Mengirimkan indeks kolom terkecil M }</span>
+<span class="kw">function</span> GetLastIdxBrs (M: MATRIKS) &#8594; indeks 
+<span class="co">{ Mengirimkan indeks baris terbesar M }</span>
+<span class="kw">function</span> GetLastIdxKol (M: MATRIKS) &#8594; indeks 
+<span class="co">{ Mengirimkan indeks kolom terbesar M }</span>
+<span class="kw">function</span> GetElmtDiagonal (M: MATRIKS, i: indeks) &#8594; el_type 
+<span class="co">{ Mengirimkan elemen M(i,i) }</span> 
+<span class="co">{*** Selektor Set: Operasi mengubah nilai elemen matriks ***}</span>
+<span class="kw">function</span> GetElmt (M: MATRIKS; i, j: <span class="dt">integer</span>) &#8594; el_type
+<span class="co">{ Mengirimkan elemen matriks M[i,j] }</span>
+<span class="kw">procedure</span> SetElmt (input/output M: MATRIKS; input i, j: <span class="dt">integer</span>; input X: el_type)
+<span class="co">{ I.S. M sudah terdefinisi; F.S. M[i,j] bernilai X }</span></code></pre></div>
+<p>Dengan menggunakan ADT di atas, <strong>buatlah implementasi prosedur dan fungsi di bawah ini</strong>. Spesifikasi prosedur/fungsi yang sudah didefinisikan pada ADT tidak perlu ditulis ulang. Tidak diperkenankan membuat fungsi/prosedur tambahan lainnya.</p>
+<div class="sourceCode"><pre class="sourceCode pascal"><code class="sourceCode pascal"><span class="kw">function</span> IsSegitigaBawah (M: MATRIKS) &#8594; <span class="dt">boolean</span>
+<span class="co">{ Mengirimkan true jika M adalah matriks segitiga bawah,dengan M&#7522;&#11388; = 0 </span>
+<span class="co">  untuk semua i &lt; j.</span>
+<span class="co">  Prekondisi: M adalah matriks bujur sangkar (berukuran n &#215; n) }</span>
+
+<span class="kw">procedure</span> DetriMatriks (input M: MATRIKS, output Det: <span class="dt">integer</span>)
+<span class="co">{ Menghitung nilai determinan matriks segitiga M, dimana determinant </span>
+<span class="co">  dihitung berdasarkan perkalian semua elemen diagonalnya.</span>
+<span class="co">  I.S. Matriks M terdefinisi;</span>
+<span class="co">  F.S. Det berisi nilai determinan matriks segitiga bawah M atau 0 jika </span>
+<span class="co">       bukan matriks segitiga bawah. }</span> </code></pre></div>
+<p>Contoh:</p>
+<p>Untuk matriks M1 dan M2 berikut:</p>
+<pre><code>M1:   1   0   0   0      M2:   7  12   0   0
+      3  15   0   0            2  13   8   4
+     -7   9   8   0           16   3   0   0
+     -4   2  11   6            3  10   1   5</code></pre>
+<p>Maka:</p>
+<ul>
+<li><code>IsSegitigaBawah(M1) = true</code></li>
+<li><code>IsSegitigaBawah(M2) = false</code></li>
+<li><code>DetriMatriks(M1,Det) &#8658; Det=720</code></li>
+<li><code>DetriMatriks(M2,Det) &#8658; Det=0</code></li>
+</ul>
+<h2 id="bagian-ii.-mesin-kata-dan-adt-stack-notasi-algoritmik-bobot-25">Bagian II. Mesin Kata dan ADT Stack (Notasi Algoritmik, bobot: 25%)</h2>
+<p>Sebuah <strong>mesin token (modifikasi dari mesin kata model 1)</strong> digunakan untuk membaca sebuah pita karakter yang berisi data transaksi di sebuah ATM dalam satu hari, yang masing-masing direpresentasikan dalam sebuah token dan diakhiri dengan '<code>.</code>'. Sebuah token menggambarkan sebuah transaksi di ATM. Ada dua jenis transaksi yaitu: <strong><code>tarik</code></strong> dan <strong><code>setor</code></strong>. Beberapa contoh isi pita karakter adalah sebagai berikut:</p>
+<pre><code>tarik-2500000    tarik-500000   setor-250000  tarik-50000  .</code></pre>
+<pre><code>   .</code></pre>
+<pre><code>  setor-1000000.</code></pre>
+<p>Pita karakter diasumsikan selalu dalam format yang benar (tidak ada bentuk-bentuk &quot;kata&quot; lain yang yang tidak valid). Pita bisa merupakan pita kosong hanya terdiri atas '<code>.</code>' (mungkin didahului sejumlah spasi/blank). Hasil akuisisi &quot;kata&quot; dalam mesin ini adalah sebuah token <strong>CToken</strong> yang terdiri dari dua komponen <code>&#12296;opr,val&#12297;</code>, dengan <em><code>op</code></em> berisi operan yang dibaca (bernilai &quot;<code>tarik</code>&quot; atau &quot;<code>setor</code>&quot;) dan <em><code>val</code></em> berisi nilai uang yang ditarik atau disetor dari/ke ATM.</p>
+<p><strong>Contoh</strong>: token-token yang dihasilkan dari pita pertama berturut-turut adalah <code>&#12296;&quot;tarik&quot;,2500000&#12297;</code>, <code>&#12296;&quot;tarik&quot;,500000&#12297;</code>, <code>&#12296;&quot;setor&quot;,250000&#12297;</code>, <code>&#12296;&quot;tarik&quot;,50000&#12297;</code>.</p>
+<p>Berikut adalah definisi Mesin Token (hasil modifikasi <strong>Mesin Kata model 1</strong>):</p>
+<div class="sourceCode"><pre class="sourceCode pascal"><code class="sourceCode pascal"><span class="co">{ ***** MesinToken ***** }</span>
+<span class="kw">use</span> MESINKARAKTER
+<span class="co">{ Primitif Mesin karakter adalah: START dan ADV.</span>
+<span class="co">  State Mesin karakter adalah:  CC (karakter hasil akuisisi) dan </span>
+<span class="co">                               EOP (true jika CC = MARK) }</span>
+<span class="co">{ ***** Konstanta ***** }</span>
+<span class="kw">constant</span>  MARK: character = <span class="st">&#39;.&#39;</span>
+<span class="kw">constant</span> BLANK: character = <span class="st">&#39; &#39;</span>
+
+<span class="co">{ ***** Definisi State Mesin ***** }</span>
+<span class="kw">type</span> Token = &lt; opr: <span class="dt">string</span>,  <span class="co">{ operator yang diakuisisi, bisa &quot;tarik&quot; </span>
+<span class="co">                                atau &quot;setor&quot; }</span>
+               val: <span class="dt">integer</span>  <span class="co">{ nilai uang yang ditarik atau disetor }</span> &gt;
+CToken: Token
+EndToken: <span class="dt">boolean</span>
+
+<span class="co">{ ***** Primitif-Primitif Mesin Integer ***** }</span>
+<span class="kw">procedure</span> STARTTOKEN
+<span class="co">{ I.S.: CToken sembarang }</span>
+<span class="co">{ F.S.: Jika CC = MARK, maka EndToken = true; }</span>
+<span class="co">{       atau EndToken = false, CToken adalah token yang sudah diakuisisi;</span>
+<span class="co">        CC karakter pertama sesudah karakter terakhir yang diakuisisi. }</span>
+<span class="kw">procedure</span> ADVTOKEN
+<span class="co">{ I.S.: EndToken = false; CC adalah karakter sesudah karakter terakhir </span>
+<span class="co">        token yang sudah diakuisisi. }</span>
+<span class="co">{ F.S.: Jika CC = MARK, maka EndToken = true; }</span>
+<span class="co">{       atau EndToken = false, CToken adalah token yang sudah diakuisisi;</span>
+<span class="co">        CC karakter pertama sesudah karakter terakhir yang diakuisisi. }</span>
+<span class="kw">procedure</span> IgnoreBlank
+<span class="co">{ I.S.: CC sembarang }</span>
+<span class="co">{ F.S.: CC &lt;&gt; BLANK atau CC = MARK. }</span>
+<span class="kw">procedure</span> SalinToken
+<span class="co">{ Mengakuisisi token. Hasil akuisisi (token) disimpan ke dalam CToken. }</span>
+<span class="co">{ I.S.: CC adalah karakter pertama dari token. }</span>
+<span class="co">{ F.S.: CToken berisi token yang sudah diakuisisi; CC = BLANK </span>
+<span class="co">        atau CC = MARK; </span>
+<span class="co">        CC adalah karakter sesudah karakter terakhir yang diakuisisi;</span>
+<span class="co">        CToken bisa berupa &lt;&quot;tarik&quot;,nilai integer&gt; atau </span>
+<span class="co">        &lt;&quot;setor&quot;,nilai integer&gt;.</span>
+<span class="co">        Proses akuisisi untuk integer menggunakan fungsi KarakterToInteger. }</span>
+<span class="kw">function</span> KarakterToInteger (C: character) &#8594; <span class="dt">integer</span>
+<span class="co">{ Mengirimkan integer [0..9] yang merupakan konversi dari character C yang </span>
+<span class="co">  merupakan salah satu dari karakter [&#39;0 &#39;..&#39;9&#39;]. }</span></code></pre></div>
+<p>Diketahui sebuah <strong>ADT Stack</strong> yang direpresentasikan dengan <strong>array statik</strong> sebagai berikut:</p>
+<div class="sourceCode"><pre class="sourceCode pascal"><code class="sourceCode pascal"><span class="co">{ *** ADT Stack *** }</span>
+<span class="co">{ *** Konstanta *** }</span>
+<span class="kw">constant</span> <span class="kw">Nil</span>: <span class="dt">integer</span> = <span class="dv">0</span>
+<span class="kw">constant</span> MaxEl: <span class="dt">integer</span> = <span class="dv">100</span>
+<span class="co">{ *** Definisi elemen dan address *** }</span>
+<span class="kw">type</span> infotype: <span class="dt">integer</span>
+<span class="kw">type</span> address: <span class="dt">integer</span>   <span class="co">{ indeks tabel }</span>
+<span class="co">{ *** Definisi Type Queue *** }</span>
+<span class="kw">type</span> Stack: &lt;  T: <span class="kw">array</span> [<span class="dv">1</span>..MaxEl] <span class="kw">of</span> infotype, <span class="co">{ tabel penyimpan elemen }</span>
+             TOP: address <span class="co">{ alamat top stack }</span> &gt;
+<span class="co">{ Definisi Stack kosong: Top = Nil }</span>
+<span class="co">{ *** Predikat Pemeriksaan Kondisi Stack *** }</span>
+<span class="kw">function</span> IsEmpty (S: Stack) &#8594; <span class="dt">boolean</span>
+<span class="co">{ Mengirim true jika S kosong }</span>
+<span class="kw">function</span> IsFull (S: Stack) &#8594; <span class="dt">boolean</span>
+<span class="co">{ Mengirim true jika tabel penampung elemen S sudah penuh yaitu mengandung </span>
+<span class="co">  MaxEl elemen }</span>
+<span class="co">{ *** Konstruktor *** }</span>
+<span class="kw">procedure</span> CreateEmpty (output S: Stack)
+<span class="co">{ I.S. Sembarang </span>
+<span class="co">  F.S. Sebuah S kosong terbentuk dengan TOP = Nil }</span>
+<span class="co">{ *** Operator-Operator Dasar Stack *** }</span>
+<span class="kw">procedure</span> Push (input/output S: Stack, input X: infotype)
+<span class="co">{ Proses: Menambahkan  X pada S dengan aturan LIFO }</span>
+  I.S. S mungkin kosong, tabel penampung elemen S TIDAK penuh. 
+  F.S. X menjadi TOP yang baru, TOP &quot;maju&quot;. }
+<span class="kw">procedure</span> Pop (input/output S: Stack, output X: infotype)
+<span class="co">{ Proses: Menghapus elemen pada S dengan aturan LIFO </span>
+<span class="co">  I.S. S tidak kosong </span>
+<span class="co">  F.S. X = nilai elemen TOP pada I.S., TOP &quot;mundur&quot;. }</span></code></pre></div>
+<ol style="list-style-type: decimal">
+<li><p>Buatlah realisasi prosedur <strong><code>STARTTOKEN</code></strong> dan <strong><code>SalinToken</code></strong> pada modul mesin token sesuai dengan spesifikasi yang diberikan (spesifikasi tidak perlu ditulis ulang). Tidak boleh menambahkan fungsi/prosedur baru.</p></li>
+<li><p>Lengkapi program utama berikut ini, yang membaca sebuah pita karakter dengan menggunakan mesin token untuk mendapatkan nilai total setoran dikurangi total penarikan pada hari itu. Gunakan <em>stack of integer</em> untuk membantuk melakukan penghitungan. Spesifikasi program tidak perlu ditulis kembali.</p>
+<div class="sourceCode"><pre class="sourceCode pascal"><code class="sourceCode pascal"><span class="kw">program</span> TransaksiATM
+<span class="co">{  Input: Pita karakter (yang dibaca menggunakan mesin token).</span>
+<span class="co">  Proses: Baca token dari pita karakter.</span>
+<span class="co">          Selama Stack tidak penuh:</span>
+<span class="co">            Jika yang dibaca &lt;&quot;setor&quot;, nilai-integer&gt;, push nilai </span>
+<span class="co">            integer tersebut ke dalam Stack </span>
+<span class="co">            Jika yang dibaca &lt;&quot;tarik&quot;, nilai-integer&gt;, push nilai </span>
+<span class="co">            integer dikali (-1) </span>
+<span class="co">            ke dalam Stack.</span>
+<span class="co">          Jika Stack penuh, tampilkan pesan &quot;Stack penuh&quot;</span>
+<span class="co">          Jika Stack tidak penuh dan pita karakter selesai dibaca:</span>
+<span class="co">            pop dan jumlahkan seluruh nilai yang ada pada Stack, lalu </span>
+<span class="co">            tampilkan hasilnya</span>
+<span class="co">  Output: - pesan &quot;tidak ada transaksi&quot; jika pita karakter kosong atau </span>
+<span class="co">            hanya berisi blank, ATAU </span>
+<span class="co">          - pesan &quot;Stack penuh&quot; jika Stack penuh, ATAU</span>
+<span class="co">          - hasil penjumlahan seluruh elemen Stack, yang menggambarkan </span>
+<span class="co">            total setoran dikurangi total penarikan }</span>
+<span class="kw">Use</span> ...
+
+<span class="kw">KAMUS</span>
+  ...
+<span class="kw">ALGORITMA</span>
+  ...</code></pre></div></li>
+</ol>
+<h2 id="bagian-iii.-adt-queue-notasi-algoritmik-bobot-25">Bagian III. ADT Queue (Notasi Algoritmik, bobot: 25%)</h2>
+<p>Diberikan definisi ADT Queue yang direpresentasikan dengan array statik menggunakan alternatif-1 sebagai berikut.</p>
+<div class="sourceCode"><pre class="sourceCode pascal"><code class="sourceCode pascal"><span class="co">{ Modul ADT Queue &#8211; Alternatif I }</span>
+<span class="co">{ *** Deklarasi Queue yang diimplementasi dengan array *** }</span>
+<span class="co">{ *** HEAD dan TAIL adalah alamat elemen pertama dan terakhir  *** }</span>
+<span class="co">{ *** Queue mampu menampung MaxEl buah elemen *** }</span>
+<span class="co">{ *** Konstanta *** }</span>
+<span class="kw">constant</span> Nil: <span class="dt">integer</span> = <span class="dv">-1</span>
+<span class="kw">constant</span> MaxEl: <span class="dt">integer</span> = <span class="dv">100</span> <span class="co">{ maksimum banyaknya elemen queue }</span>
+<span class="co">{ *** Definisi elemen dan address *** }</span>
+<span class="kw">type</span> infotype: <span class="dt">integer</span> 
+<span class="kw">type</span> address : <span class="dt">integer</span> <span class="co">{indeks tabel}</span>
+
+<span class="co">{ *** Definisi Type Queue *** }</span>
+<span class="kw">type</span> Queue: &lt;      T: <span class="kw">array</span> [<span class="dv">0</span>..MaxEl<span class="dv">-1</span>] <span class="kw">of</span> infotype 
+                               <span class="co">{ array penyimpan elemen Queue }</span>
+                HEAD: address, <span class="co">{ alamat penghapusan}</span>
+                TAIL: address, <span class="co">{ alamat penambahan}</span> &gt;
+<span class="co">{ Definisi Queue kosong: Head = Nil; TAIL = Nil.}</span>
+<span class="co">{ Definisi akses dengan Selektor: </span>
+<span class="co">  Head(Q), Tail(Q), MaxEl(Q), InfoHead(Q), InfoTail(Q) </span>
+<span class="co">  dengan Q adalah Queue }</span>
+<span class="co">{ *** Predikat Pemeriksaan Kondisi Queue *** }</span>
+<span class="kw">function</span> IsEmpty (Q: Queue) &#8594; <span class="dt">boolean</span>
+<span class="co">{ Mengirim true jika Q kosong }</span>
+<span class="kw">function</span> IsFull (Q: Queue) &#8594; <span class="dt">boolean</span>
+<span class="co">{ Mengirim true jika array penampung elemen Q sudah penuh yaitu mengandung </span>
+<span class="co">  MaxEl elemen }</span>
+<span class="kw">function</span> NBElmt (Q: Queue) &#8594; <span class="dt">integer</span>
+<span class="co">{ Mengirimkan banyaknya elemen queue. Mengirimkan 0 jika Q kosong. }</span>
+<span class="co">{ *** Konstruktor dan Destruktor *** }</span>
+<span class="kw">procedure</span> CreateEmpty (output Q: Queue, input Max: <span class="dt">integer</span> &gt; <span class="dv">0</span>)
+<span class="co">{ I.S. Max terdefinisi }</span>
+<span class="co">{ F.S. Sebuah Q kosong terbentuk dan salah satu kondisi sbb:       }</span>
+<span class="co">{      Jika alokasi berhasil, tabel memori dialokasi berukuran Max }</span>
+<span class="co">{      atau: jika alokasi gagal, Q kosong dg MaxEl=0               }</span>
+<span class="co">{ Proses: Melakukan alokasi memori dan membuat sebuah Q kosong     }</span>
+<span class="kw">procedure</span> DeAlokasi (input/output Q: Queue)
+<span class="co">{ Proses: Mengembalikan memori Q }</span>
+<span class="co">{ I.S. Q pernah dialokasi }</span>
+<span class="co">{ F.S. Q menjadi tidak terdefinisi lagi, MaxEl(Q) diset 0 }</span>
+<span class="co">{ *** Operator-Operator Dasar Queue *** }</span>
+<span class="kw">procedure</span> Enqueue (input/output Q: Queue, input X: infotype)
+<span class="co">{ Proses: Menambahkan  X pada Q dengan aturan FIFO }</span>
+<span class="co">{ I.S. Q mungkin kosong, tabel penampung elemen Q TIDAK penuh }</span>
+<span class="co">{ F.S. X menjadi TAIL yang baru}</span>
+<span class="kw">procedure</span> Dequeue (input/output Q: Queue, output X: infotype)
+<span class="co">{ Proses: Menghapus elemen pertama pada Q dengan aturan FIFO }</span>
+<span class="co">{ I.S. Q tidak kosong }</span>
+<span class="co">{ F.S. X = nilai elemen HEAD pada I.S., </span>
+<span class="co">       Jika Queue masih isi: HEAD diset tetap = 0, elemen-elemen setelah </span>
+<span class="co">       HEAD yang lama digeser ke &quot;kiri&quot;, TAIL = TAIL &#8211; 1; </span>
+<span class="co">       Jika Queue menjadi kosong, HEAD=TAIL=Nil }</span>
+<span class="co">{ *** Operator Tambahan *** }</span>
+<span class="kw">procedure</span> Split (input Q: Queue, input ratio: <span class="dt">real</span>, output Q1, Q2: Queue)
+<span class="co">{ I.S. Q tidak kosong, dan 0 &#8804; X  &#8804; 1 }</span>
+<span class="co">{ F.S. Q1 dan Q2 akan berisi elemen-elemen dari Q secara bersilangan </span>
+<span class="co">       (elemen pertama Q ke Q1, elemen kedua Q ke Q2, elemen ketiga Q ke </span>
+<span class="co">       Q1, dan seterusnya), dengan NBElmt(Q1) = ratio &#215; NBElmt(Q).</span>
+<span class="co">       Jika hasilnya bukan bilangan bulat, maka dilakukan pembualatan ke </span>
+<span class="co">       atas. </span>
+<span class="co">       Contoh: NBElmt(Q)=5 dan ratio = 0,25, maka NBElmt(Q1)=0,25&#215;5=1,25&#8776;2. </span>
+<span class="co">       Sehingga Q1 akan memiliki 2 elemen (dibulatkan ke atas), dan Q2 akan </span>
+<span class="co">       memiliki 3 elemen. }</span></code></pre></div>
+<p>Dengan spesifikasi ADT Queue di atas, realisasikan prosedur-prosedur berikut (spesifikasi tidak perlu ditulis ulang). Gunakan semaksimal mungkin primitif dan selektor yang ada. Tidak diperkenankan untuk membuat fungsi/prosedur baru.</p>
+<ol style="list-style-type: decimal">
+<li><p>Prosedur <code>Dequeue</code>.</p></li>
+<li><p>Prosedur <code>Split</code>.</p></li>
+</ol>
+<h2 id="bagian-iv.-adt-set-dan-hash-notasi-algoritmik-bobot-25">Bagian IV. ADT Set dan Hash (Notasi Algoritmik, bobot: 25%)</h2>
+<p>Cpl. Gionno (dibaca: Kopral Jono) ingin berhenti dari tentara untuk membuat suatu sistem <em>e-commerce</em>. Untuk itu ia membutuhkan ADT Bag yang merepresentasikan keranjang belanja. ADT Bag mirip dengan ADT Set, bedanya untuk setiap item yang disimpan dalam sebuah Bag terdapat pencatat jumlah. Satu unit item dapat ditambahkan dan dikurangi dari Bag dengan operasi <code>Add</code> dan <code>Remove</code>. Sebagai ilustrasi, untuk sebuah Bag B yang semula kosong, urutan pemanggilan operasi <code>Add(B,telur); Add(B,susu); Add(B,susu); Add(B,telur); Remove(B,susu); Add(B,roti); Remove(B,roti);</code> menghasilkan isi B: <code>[telur&#8658;2, susu&#8658;1]</code>. Selain itu terdapat fungsi <code>Get</code> yang mengembalikan jumlah kemunculan sebuah item dalam Bag. Pada ilustrasi tadi, <code>Get(B,telur)</code> mengembalikan <code>2</code> sedangkan <code>Get(B,roti)</code> mengembalikan <code>0</code>.</p>
+<p>Agar penggunaan memori efisien, Gionno tidak mau menyimpan item dalam Bag sebagai <code>string</code>, melainkan sebagai <code>integer</code> yang merepresentasikan ID barang. Ia menggunakan ADT Map untuk menyimpan pemetaan ID barang ke <em>tuple</em> <code>Item</code> berisi nama dan harga satuan, misal <code>[54&#8658;&#12296;&quot;telur&quot;,3500&#12297;, 72&#8658;&#12296;&quot;susu&quot;,12000&#12297;, 63&#8658;&#12296;&quot;roti&quot;,16000&#12297;]</code>. Nama dan harga sebuah <code>item</code> dapat diakses dengan <code>item.name</code> dan <code>item.price</code>. Bantulah Gionno membangun sistem <em>e-commerce</em> ini dengan:</p>
+<ol style="list-style-type: decimal">
+<li><p>Membuat <strong>definisi ADT Bag</strong>. Gunakan <em>array</em> kontigu untuk menyimpan elemen-elemen Bag dan <code>NbElmt</code> untuk mencatat jumlah jenis item yang ada di dalam Bag. Tuliskan prototipe untuk konstruktor dan operasi-operasi <code>Add</code>, <code>Remove</code>, dan <code>Get</code> lengkap dengan spesifikasinya (prekondisi/I.S.,F.S.)</p></li>
+<li><p>Membuat <strong>implementasi operasi <code>Add</code> dan <code>Remove</code></strong>. Asumsikan item disimpan dalam <em>array</em> sesuai urutan penambahan item ke Bag. (Tidak <em>sorted</em>, tidak pakai <em>hash table</em>.)</p></li>
+<li><p>Membuat <strong>prosedur <code>CetakInvoice(input B:Bag, input M:Map)</code></strong> yang mencetak jumlah, nama, dan harga setiap item di dalam Bag B, serta total harga yang harus dibayar. Untuk memudahkan iterasi, Gionno sudah membuat fungsi <code>ItemIDs(B: Bag) &#8594; array of integer</code> yang mengembalikan <em>array</em> berisi ID semua item yang ada di B. ADT Map dengan key bertipe <code>integer</code> dan value bertipe <code>Item</code> juga sudah dibuat oleh Gionno dengan sebagian spesifikasi sebagai berikut&#8212;Anda tinggal menggunakannya:</p>
+<div class="sourceCode"><pre class="sourceCode pascal"><code class="sourceCode pascal"><span class="kw">type</span> Item: &lt; name: <span class="dt">string</span>, price: <span class="dt">integer</span>  &gt;
+<span class="kw">type</span> keytype: <span class="dt">integer</span>
+<span class="kw">type</span> infotype: Item
+<span class="kw">type</span> Map: ... <span class="co">{ terdefinisi }</span> 
+
+<span class="co">{** aksesor **}</span>
+<span class="kw">function</span> Get(M: Map, k: keytype) &#8594; infotype
+<span class="co">{ Mengembalikan tuple Item yang berkorespondensi dengan key k dalam M </span>
+<span class="co">  atau Nil jika key k tidak ada dalam M }</span></code></pre></div>
+<p>Contoh hasil pemanggilan <code>CetakInvoice</code> pada Bag B <code>[54&#8658;2,72&#8658;1]</code> dan Map M <code>[54&#8658;&#12296;&quot;telur&quot;,3500&#12297;, 72&#8658;&#12296;&quot;susu&quot;,12000&#12297;, 63&#8658;&#12296;&quot;roti&quot;,16000&#12297;]</code>:</p>
+<pre class="console"><code>2 telur 7000
+1 susu 12000
+TOTAL 19000</code></pre></li>
+</ol>
+<p>Tidak memperkenankan membuat/mengasumsikan adanya fungsi/prosedur selain yang disebutkan pada soal.</p>
+
+
+</body>
+</html>
