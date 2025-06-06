@@ -2,6 +2,8 @@
 title: "Home"
 ---
 
+![](logo.png){fig-alt="Satrio Adi Rukmono." fig-align="left" width=200}
+
 Welcome to my home page.
 
 I am a PhD researcher at the [Software Engineering & Technology group](https://set.win.tue.nl/research/), [TU Eindhoven](https://tue.nl/). I received my master's degree from the [Informatics program](https://stei.itb.ac.id/en/education/master-informatics/), [Institut Teknologi Bandung](https://itb.ac.id/).

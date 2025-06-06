@@ -4,10 +4,13 @@ color:
   primary: blue
 
 logo: 
-  medium: logo.png
+  medium: favicon.png
 
 typography:
   fonts:
-    - family: "Noto Sans"
+    - family: Noto Sans
       source: google
-  monospace: "Fira Code"
+    - family: Noto Sans Mono
+      source: google
+  base: Noto Sans
+  monospace: Noto Sans Mono

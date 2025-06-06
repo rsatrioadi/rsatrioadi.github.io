@@ -4,6 +4,9 @@ project:
 
 website:
   title: "Satrio Adi Rukmono"
+  favicon: favicon.png
+  site-url: https://satrio.rukmono.id
+  open-graph: true
   navbar:
     left:
       - index.qmd
