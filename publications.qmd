@@ -2,6 +2,8 @@
 title: "Publications"
 ---
 
+[DBLP](https://dblp.org/pid/320/0110.html) • [Google Scholar](https://scholar.google.com/citations?user=oogaGtwAAAAJ&hl=nl&oi=ao)
+
 ## 2024
 
 **CodeView: A tool for software visualization in development view** [[🡥]](https://doi.org/10.1109/ICoDSE63307.2024.10829915){target="_blank"}  

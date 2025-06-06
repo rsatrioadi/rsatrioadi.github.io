@@ -10,6 +10,4 @@ typography:
   fonts:
     - family: "Noto Sans"
       source: google
-  base: "Noto Sans"
-  headings: "Noto Sans"
-  monospace: "Noto Sans Mono"
+  monospace: "Fira Code"
