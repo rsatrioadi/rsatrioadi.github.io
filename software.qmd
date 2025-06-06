@@ -1,0 +1,31 @@
+---
+title: "Software"
+---
+
+## Utilities
+
+### Character Viewer
+
+[[🡥]](https://github.com/rsatrioadi/character-viewer/releases) A Unicode character viewer to help you find the character you need and easily copy it to the clipboard.
+
+![](figures/software/charview.png){fig-alt="Character Viewer screenshot." fig-align="left" width=300}
+
+## Software Analysis
+
+### ClassViz
+
+[[🡥]](https://satrio.rukmono.id/classviz) Visualize your source code. Requires graph extractors (e.g., [Javapers](software.html#javapers) for Java or [Csharpers](software.html#chsarpers) for C#) to generate a JSON file as input for ClassViz, and optionally [Arcana](software.html#arcana) for enrichment.
+
+![](figures/software/classviz.png){fig-alt="ClassViz screenshot." fig-align="left" width=600}
+
+### Javapers
+
+[[🡥]](https://github.com/rsatrioadi/javapers)
+
+### Csharpers
+
+[[🡥]](https://github.com/rsatrioadi/csharpers)
+
+### Arcana
+
+[[🡥]](https://github.com/rsatrioadi/arcana)
