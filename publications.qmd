@@ -64,34 +64,34 @@ _**SA Rukmono**, MRV Chaudron_
 ICoDSE 2021  
 _K Sendjaja, **SA Rukmono**, RS Perdana_
 
-**Semantic Approach for Increasing Test Case Coverage in Automated Grading of Programming Exercise** [[🡥]]  
+**Semantic Approach for Increasing Test Case Coverage in Automated Grading of Programming Exercise** [[🡥]](https://doi.org/10.1109/ICoDSE53690.2021.9648439)  
 ICoDSE 2021  
 _MRI Bariansyah, **SA Rukmono**, RS Perdana_
 
-**Integration Model for Learning Management Systems, Source Control Management, and Autograders using Service-Oriented Architecture Principle** [[🡥]]  
+**Integration Model for Learning Management Systems, Source Control Management, and Autograders using Service-Oriented Architecture Principle** [[🡥]](https://doi.org/10.1109/ICoDSE53690.2021.9648450)  
 ICoDSE 2021  
 _BM Panjaitan, **SA Rukmono**, RS Perdana_
 
-**Abstract Syntax Tree (AST) and Control Flow Graph (CFG) Construction of Notasi Algoritmik** [[🡥]]  
+**Abstract Syntax Tree (AST) and Control Flow Graph (CFG) Construction of Notasi Algoritmik** [[🡥]](https://doi.org/10.1109/ICoDSE53690.2021.9648437)  
 ICoDSE 2021  
 _IS Putra, **SA Rukmono**, RS Perdana_
 
-**Designing an Educational Game Evaluation Framework Based on Game Mechanics** [[🡥]]  
+**Designing an Educational Game Evaluation Framework Based on Game Mechanics** [[🡥]](https://doi.org/10.1109/ICoICT52021.2021.9527418)  
 ICoICT 2021  
 _**SA Rukmono**, FZ Azif, MZC Candra_
 
 ## 2019
 
-**Application of Dynamic Difficulty Adjustment on Evidence-centered Design Framework for Game Based Learning** [[🡥]]  
+**Application of Dynamic Difficulty Adjustment on Evidence-centered Design Framework for Game Based Learning** [[🡥]](https://doi.org/10.1109/ICoDSE48700.2019.9092725)  
 ICoDSE 2019  
 _BSA Shena, B Sitohang, **SA Rukmono**_
 
-**Gamification of mobile-based Japanese language shadowing** [[🡥]]  
+**Gamification of mobile-based Japanese language shadowing** [[🡥]](https://doi.org/10.1109/ICAIIT.2019.8834678)  
 ICAIIT 2019  
 _HC Kurniawan, B Sitohang, **SA Rukmono**_
 
 ## 2018
 
-**Optimizations of Dual Polarization FMCW Weather Radar Signal Processing on CUDA Platform** [[🡥]]  
+**Optimizations of Dual Polarization FMCW Weather Radar Signal Processing on CUDA Platform** [[🡥]](https://doi.org/10.1109/ICODSE.2018.8705821)  
 ICoDSE 2018  
 _**SA Rukmono**, AI Kistijantoro, RS Perdana_
