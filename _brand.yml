@@ -1,0 +1,15 @@
+color:
+  palette:
+    blue: "#3d3fb8"
+  primary: blue
+
+logo: 
+  medium: logo.png
+
+typography:
+  fonts:
+    - family: "Noto Sans"
+      source: google
+  base: "Noto Sans"
+  headings: "Noto Sans"
+  monospace: "Noto Sans Mono"

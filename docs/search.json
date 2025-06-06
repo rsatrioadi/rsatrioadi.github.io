@@ -1,0 +1,58 @@
+[
+  {
+    "objectID": "publications.html",
+    "href": "publications.html",
+    "title": "Publications",
+    "section": "",
+    "text": "CodeView: A tool for software visualization in development view [🡥]\nICoDSE 2024: 67-72\nC Jeffrey, AP Nugroho, SA Rukmono, Y Widyani\nDeductive Software Architecture Recovery via Chain-of-thought Prompting [🡥]\nNIER@ICSE 2024: 92-96\nSA Rukmono, L Ochoa, MRV Chaudron\nArvisan: an Interactive Tool for Visualisation and Analysis of Low-Code Architecture Landscapes [🡥]\nMoDELS (Companion) 2024: 848-855\nRoy Kakkenberg, SA Rukmono, MRV Chaudron, W Gerholt, M Pinto, C Ribeiro de Oliveira\nLayered BubbleTea Software Architecture Visualisation [🡥]\nVISSOFT 2024: 122-126\nSA Rukmono, MRV Chaudron, C Jeffrey\nHuman factors in model-driven engineering: future research goals and initiatives for MDE [🡥]\nSoftw. Syst. Model. 23(4): 801-819 (2024)\nG Liebel, J Klünder, R Hebig, C Lazik, I Nunes, I Graßl, JP Steghöfer, J Exelmans, J Oertel, K Marquardt, K Juhnke, K Schneider, L Gren, L Happe, M Herrmann, M Wyrich, M Tichy, M Goulão, R Wohlrab, R Kalantari, R Heinrich, S Greiner, SA Rukmono, S Chakraborty, S Abrahão, V Amaral\nSystematizing modeler experience (MX) in model-driven engineering success stories [🡥]\nSoftw. Syst. Model. 23(4): 821-832 (2024)\nR Kalantari, J Oertel, J Exelmans, SA Rukmono, V Amaral, M Tichy, K Juhnke, JP Steghöfer, S Abrahão"
+  },
+  {
+    "objectID": "publications.html#section",
+    "href": "publications.html#section",
+    "title": "Publications",
+    "section": "",
+    "text": "CodeView: A tool for software visualization in development view [🡥]\nICoDSE 2024: 67-72\nC Jeffrey, AP Nugroho, SA Rukmono, Y Widyani\nDeductive Software Architecture Recovery via Chain-of-thought Prompting [🡥]\nNIER@ICSE 2024: 92-96\nSA Rukmono, L Ochoa, MRV Chaudron\nArvisan: an Interactive Tool for Visualisation and Analysis of Low-Code Architecture Landscapes [🡥]\nMoDELS (Companion) 2024: 848-855\nRoy Kakkenberg, SA Rukmono, MRV Chaudron, W Gerholt, M Pinto, C Ribeiro de Oliveira\nLayered BubbleTea Software Architecture Visualisation [🡥]\nVISSOFT 2024: 122-126\nSA Rukmono, MRV Chaudron, C Jeffrey\nHuman factors in model-driven engineering: future research goals and initiatives for MDE [🡥]\nSoftw. Syst. Model. 23(4): 801-819 (2024)\nG Liebel, J Klünder, R Hebig, C Lazik, I Nunes, I Graßl, JP Steghöfer, J Exelmans, J Oertel, K Marquardt, K Juhnke, K Schneider, L Gren, L Happe, M Herrmann, M Wyrich, M Tichy, M Goulão, R Wohlrab, R Kalantari, R Heinrich, S Greiner, SA Rukmono, S Chakraborty, S Abrahão, V Amaral\nSystematizing modeler experience (MX) in model-driven engineering success stories [🡥]\nSoftw. Syst. Model. 23(4): 821-832 (2024)\nR Kalantari, J Oertel, J Exelmans, SA Rukmono, V Amaral, M Tichy, K Juhnke, JP Steghöfer, S Abrahão"
+  },
+  {
+    "objectID": "publications.html#section-1",
+    "href": "publications.html#section-1",
+    "title": "Publications",
+    "section": "2023",
+    "text": "2023\nAchieving high-level software component summarization via hierarchical chain-of-thought prompting and static code analysis [🡥]\nICoDSE 2023: 7-12\nSA Rukmono, L Ochoa, MRV Chaudron\nProcess Mining from Jira Issues at a Large Company [🡥]\nICSME 2023: 425-435\nB Coremans, AL Klomp, SA Rukmono, J Krüger, D Fahland, MRV Chaudron\nEnabling Analysis and Reasoning on Software Systems through Knowledge Graph Representation [🡥]\nMSR 2023: 120-124\nSA Rukmono, MRV Chaudron"
+  },
+  {
+    "objectID": "publications.html#section-2",
+    "href": "publications.html#section-2",
+    "title": "Publications",
+    "section": "2022",
+    "text": "2022\nRole stereotypes in software designs and their evolution [🡥]\nJ. Syst. Softw. 189: 111296 (2022)\nT Ho-Quang, A Nurwidyantoro, SA Rukmono, MRV Chaudron, F Fröding, D Nguyen Ngoc\nEvaluating the layout quality of UML class diagrams using machine learning [🡥]\nJ. Syst. Softw. 192: 111413 (2022)\nG Bergström, F Hujainah, T Ho-Quang, R Jolak, SA Rukmono, A Nurwidyantoro, MRV Chaudron\nGuiding Peer-feedback in Learning Software Design using UML [🡥]\nICSE (SEET) 2022: 122-133\nSA Rukmono, MRV Chaudron"
+  },
+  {
+    "objectID": "publications.html#section-3",
+    "href": "publications.html#section-3",
+    "title": "Publications",
+    "section": "2021",
+    "text": "2021\nEvaluating Control-Flow Graph Similarity for Grading Programming Exercises [🡥]\nICoDSE 2021\nK Sendjaja, SA Rukmono, RS Perdana\nSemantic Approach for Increasing Test Case Coverage in Automated Grading of Programming Exercise [[🡥]]\nICoDSE 2021\nMRI Bariansyah, SA Rukmono, RS Perdana\nIntegration Model for Learning Management Systems, Source Control Management, and Autograders using Service-Oriented Architecture Principle [[🡥]]\nICoDSE 2021\nBM Panjaitan, SA Rukmono, RS Perdana\nAbstract Syntax Tree (AST) and Control Flow Graph (CFG) Construction of Notasi Algoritmik [[🡥]]\nICoDSE 2021\nIS Putra, SA Rukmono, RS Perdana\nDesigning an Educational Game Evaluation Framework Based on Game Mechanics [[🡥]]\nICoICT 2021\nSA Rukmono, FZ Azif, MZC Candra"
+  },
+  {
+    "objectID": "publications.html#section-4",
+    "href": "publications.html#section-4",
+    "title": "Publications",
+    "section": "2019",
+    "text": "2019\nApplication of Dynamic Difficulty Adjustment on Evidence-centered Design Framework for Game Based Learning [[🡥]]\nICoDSE 2019\nBSA Shena, B Sitohang, SA Rukmono\nGamification of mobile-based Japanese language shadowing [[🡥]]\nICAIIT 2019\nHC Kurniawan, B Sitohang, SA Rukmono"
+  },
+  {
+    "objectID": "publications.html#section-5",
+    "href": "publications.html#section-5",
+    "title": "Publications",
+    "section": "2018",
+    "text": "2018\nOptimizations of Dual Polarization FMCW Weather Radar Signal Processing on CUDA Platform [[🡥]]\nICoDSE 2018\nSA Rukmono, AI Kistijantoro, RS Perdana"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Home",
+    "section": "",
+    "text": "Welcome to my home page.\nI am a PhD researcher at the Software Engineering & Technology group, TU Eindhoven. I received my master’s degree from the Informatics program, Institut Teknologi Bandung.\nMy academic parents are prof.dr. Michel Chaudron and dr. Lina Ochoa.\nEmail me at s.a.rukmono at the domain where I am doing my PhD (for research thingies) or satrio at the domain rukmono.id (for other things).\nFeel free to browse around!"
+  }
+]

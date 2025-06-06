@@ -1,0 +1,95 @@
+---
+title: "Publications"
+---
+
+## 2024
+
+**CodeView: A tool for software visualization in development view** [[🡥]](https://doi.org/10.1109/ICoDSE63307.2024.10829915){target="_blank"}  
+ICoDSE 2024: 67-72  
+_C Jeffrey, AP Nugroho, **SA Rukmono**, Y Widyani_
+
+**Deductive Software Architecture Recovery via Chain-of-thought Prompting** [[🡥]](https://doi.org/10.1145/3639476.3639776){target="_blank"}  
+NIER@ICSE 2024: 92-96  
+_**SA Rukmono**, L Ochoa, MRV Chaudron_
+
+**Arvisan: an Interactive Tool for Visualisation and Analysis of Low-Code Architecture Landscapes** [[🡥]](https://doi.org/10.1145/3652620.3688331){target="_blank"}  
+MoDELS (Companion) 2024: 848-855  
+_Roy Kakkenberg, **SA Rukmono**, MRV Chaudron, W Gerholt, M Pinto, C Ribeiro de Oliveira_
+
+**Layered BubbleTea Software Architecture Visualisation** [[🡥]](https://doi.org/10.1109/VISSOFT64034.2024.00024){target="_blank"}  
+VISSOFT 2024: 122-126  
+_**SA Rukmono**, MRV Chaudron, C Jeffrey_
+
+**Human factors in model-driven engineering: future research goals and initiatives for MDE** [[🡥]](https://doi.org/10.1007/s10270-024-01188-8){target="_blank"}  
+Softw. Syst. Model. 23(4): 801-819 (2024)  
+_G Liebel, J Klünder, R Hebig, C Lazik, I Nunes, I Graßl, JP Steghöfer, J Exelmans, J Oertel, K Marquardt, K Juhnke, K Schneider, L Gren, L Happe, M Herrmann, M Wyrich, M Tichy, M Goulão, R Wohlrab, R Kalantari, R Heinrich, S Greiner, **SA Rukmono**, S Chakraborty, S Abrahão, V Amaral_
+
+**Systematizing modeler experience (MX) in model-driven engineering success stories** [[🡥]](https://doi.org/10.1007/s10270-024-01194-w){target="_blank"}  
+Softw. Syst. Model. 23(4): 821-832 (2024)  
+_R Kalantari, J Oertel, J Exelmans, **SA Rukmono**, V Amaral, M Tichy, K Juhnke, JP Steghöfer, S Abrahão_
+
+## 2023
+
+**Achieving high-level software component summarization via hierarchical chain-of-thought prompting and static code analysis** [[🡥]](https://doi.org/10.1109/ICoDSE59534.2023.10292037)  
+ICoDSE 2023: 7-12  
+_**SA Rukmono**, L Ochoa, MRV Chaudron_
+
+**Process Mining from Jira Issues at a Large Company** [[🡥]](https://doi.org/10.1109/ICSME58846.2023.00055){target="_blank"}  
+ICSME 2023: 425-435  
+_B Coremans, AL Klomp, **SA Rukmono**, J Krüger, D Fahland, MRV Chaudron_
+
+**Enabling Analysis and Reasoning on Software Systems through Knowledge Graph Representation** [[🡥]](https://doi.org/10.1109/MSR59073.2023.00029){target="_blank"}  
+MSR 2023: 120-124  
+_**SA Rukmono**, MRV Chaudron_
+
+## 2022
+
+**Role stereotypes in software designs and their evolution** [[🡥]](https://doi.org/10.1016/j.jss.2022.111296)  
+J. Syst. Softw. 189: 111296 (2022)  
+_T Ho-Quang, A Nurwidyantoro, **SA Rukmono**, MRV Chaudron, F Fröding, D Nguyen Ngoc_
+
+**Evaluating the layout quality of UML class diagrams using machine learning** [[🡥]](https://doi.org/10.1016/j.jss.2022.111413)  
+J. Syst. Softw. 192: 111413 (2022)  
+_G Bergström, F Hujainah, T Ho-Quang, R Jolak, **SA Rukmono**, A Nurwidyantoro, MRV Chaudron_
+
+**Guiding Peer-feedback in Learning Software Design using UML** [[🡥]](https://doi.org/10.1145/3510456.3514148)  
+ICSE (SEET) 2022: 122-133  
+_**SA Rukmono**, MRV Chaudron_
+
+## 2021
+
+**Evaluating Control-Flow Graph Similarity for Grading Programming Exercises** [[🡥]](https://doi.org/10.1145/3510456.3514148)  
+ICoDSE 2021  
+_K Sendjaja, **SA Rukmono**, RS Perdana_
+
+**Semantic Approach for Increasing Test Case Coverage in Automated Grading of Programming Exercise** [[🡥]]  
+ICoDSE 2021  
+_MRI Bariansyah, **SA Rukmono**, RS Perdana_
+
+**Integration Model for Learning Management Systems, Source Control Management, and Autograders using Service-Oriented Architecture Principle** [[🡥]]  
+ICoDSE 2021  
+_BM Panjaitan, **SA Rukmono**, RS Perdana_
+
+**Abstract Syntax Tree (AST) and Control Flow Graph (CFG) Construction of Notasi Algoritmik** [[🡥]]  
+ICoDSE 2021  
+_IS Putra, **SA Rukmono**, RS Perdana_
+
+**Designing an Educational Game Evaluation Framework Based on Game Mechanics** [[🡥]]  
+ICoICT 2021  
+_**SA Rukmono**, FZ Azif, MZC Candra_
+
+## 2019
+
+**Application of Dynamic Difficulty Adjustment on Evidence-centered Design Framework for Game Based Learning** [[🡥]]  
+ICoDSE 2019  
+_BSA Shena, B Sitohang, **SA Rukmono**_
+
+**Gamification of mobile-based Japanese language shadowing** [[🡥]]  
+ICAIIT 2019  
+_HC Kurniawan, B Sitohang, **SA Rukmono**_
+
+## 2018
+
+**Optimizations of Dual Polarization FMCW Weather Radar Signal Processing on CUDA Platform** [[🡥]]  
+ICoDSE 2018  
+_**SA Rukmono**, AI Kistijantoro, RS Perdana_
