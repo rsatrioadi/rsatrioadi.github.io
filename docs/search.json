@@ -4,14 +4,14 @@
     "href": "software.html",
     "title": "Software",
     "section": "",
-    "text": "[🡥] A Unicode character viewer to help you find the character you need and easily copy it to the clipboard."
+    "text": "[🡥] A Unicode character viewer to help you find the character you need and easily copy it to the clipboard.\n\n\n\n\n\n\n\n\n[🡥] A simple web app that lets you add, organize, and copy multiple pieces of text with ease. You can add texts, organize them using checkboxes, and copy selected texts to your clipboard, all in a minimalistic interface."
   },
   {
     "objectID": "software.html#utilities",
     "href": "software.html#utilities",
     "title": "Software",
     "section": "",
-    "text": "[🡥] A Unicode character viewer to help you find the character you need and easily copy it to the clipboard."
+    "text": "[🡥] A Unicode character viewer to help you find the character you need and easily copy it to the clipboard.\n\n\n\n\n\n\n\n\n[🡥] A simple web app that lets you add, organize, and copy multiple pieces of text with ease. You can add texts, organize them using checkboxes, and copy selected texts to your clipboard, all in a minimalistic interface."
   },
   {
     "objectID": "software.html#software-analysis",
@@ -75,5 +75,75 @@
     "title": "Publications",
     "section": "2018",
     "text": "2018\n\nOptimizations of Dual Polarization FMCW Weather Radar Signal Processing on CUDA Platform [🡥]\nICoDSE 2018\nSA Rukmono, AI Kistijantoro, RS Perdana"
+  },
+  {
+    "objectID": "software.html#character-viewer",
+    "href": "software.html#character-viewer",
+    "title": "Apps",
+    "section": "",
+    "text": "[🡥] A Unicode character viewer to help you find the character you need and easily copy it to the clipboard."
+  },
+  {
+    "objectID": "software.html#copy-pad",
+    "href": "software.html#copy-pad",
+    "title": "Apps",
+    "section": "Copy-Pad",
+    "text": "Copy-Pad\n[🡥] A simple web app that lets you add, organize, and copy multiple pieces of text with ease. You can add texts, organize them using checkboxes, and copy selected texts to your clipboard, all in a minimalistic interface."
+  },
+  {
+    "objectID": "apps.html",
+    "href": "apps.html",
+    "title": "Apps",
+    "section": "",
+    "text": "[🡥] A Unicode character viewer to help you find the character you need and easily copy it to the clipboard."
+  },
+  {
+    "objectID": "apps.html#character-viewer",
+    "href": "apps.html#character-viewer",
+    "title": "Apps",
+    "section": "",
+    "text": "[🡥] A Unicode character viewer to help you find the character you need and easily copy it to the clipboard."
+  },
+  {
+    "objectID": "apps.html#copy-pad",
+    "href": "apps.html#copy-pad",
+    "title": "Apps",
+    "section": "Copy-Pad",
+    "text": "Copy-Pad\n[🡥] A simple web app that lets you add, organize, and copy multiple pieces of text with ease. You can add texts, organize them using checkboxes, and copy selected texts to your clipboard, all in a minimalistic interface."
+  },
+  {
+    "objectID": "sw-analysis.html",
+    "href": "sw-analysis.html",
+    "title": "Software Analysis",
+    "section": "",
+    "text": "[🡥] Visualize your source code. Requires graph extractors (e.g., Javapers for Java or Csharpers for C#) to generate a JSON file as input for ClassViz, and optionally Arcana for enrichment."
+  },
+  {
+    "objectID": "sw-analysis.html#classviz",
+    "href": "sw-analysis.html#classviz",
+    "title": "Software Analysis",
+    "section": "",
+    "text": "[🡥] Visualize your source code. Requires graph extractors (e.g., Javapers for Java or Csharpers for C#) to generate a JSON file as input for ClassViz, and optionally Arcana for enrichment."
+  },
+  {
+    "objectID": "sw-analysis.html#javapers",
+    "href": "sw-analysis.html#javapers",
+    "title": "Software Analysis",
+    "section": "Javapers",
+    "text": "Javapers\n[🡥]"
+  },
+  {
+    "objectID": "sw-analysis.html#csharpers",
+    "href": "sw-analysis.html#csharpers",
+    "title": "Software Analysis",
+    "section": "Csharpers",
+    "text": "Csharpers\n[🡥]"
+  },
+  {
+    "objectID": "sw-analysis.html#arcana",
+    "href": "sw-analysis.html#arcana",
+    "title": "Software Analysis",
+    "section": "Arcana",
+    "text": "Arcana\n[🡥]"
   }
 ]

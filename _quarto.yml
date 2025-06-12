@@ -11,7 +11,8 @@ website:
     left:
       - index.qmd
       - publications.qmd
-      - software.qmd
+      - apps.qmd
+      - sw-analysis.qmd
 
 format:
   html:
