@@ -1,23 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://satrio.rukmono.id/software.html</loc>
-    <lastmod>2025-06-11T09:21:27.394Z</lastmod>
+    <loc>https://satrio.rukmono.id/sw-analysis.html</loc>
+    <lastmod>2025-06-11T09:22:56.798Z</lastmod>
   </url>
   <url>
     <loc>https://satrio.rukmono.id/index.html</loc>
     <lastmod>2025-06-06T14:44:22.379Z</lastmod>
   </url>
   <url>
-    <loc>https://satrio.rukmono.id/publications.html</loc>
-    <lastmod>2025-06-06T14:49:37.354Z</lastmod>
-  </url>
-  <url>
     <loc>https://satrio.rukmono.id/apps.html</loc>
     <lastmod>2025-06-11T09:22:20.682Z</lastmod>
   </url>
   <url>
-    <loc>https://satrio.rukmono.id/sw-analysis.html</loc>
-    <lastmod>2025-06-11T09:22:56.798Z</lastmod>
+    <loc>https://satrio.rukmono.id/publications.html</loc>
+    <lastmod>2025-06-06T14:49:37.354Z</lastmod>
   </url>
 </urlset>
