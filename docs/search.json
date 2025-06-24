@@ -4,63 +4,63 @@
     "href": "sw-analysis.html",
     "title": "Software Analysis",
     "section": "",
-    "text": "[🡥] Visualize your source code. Requires graph extractors (e.g., Javapers for Java or Csharpers for C#) to generate a JSON file as input for ClassViz, and optionally Arcana for enrichment."
+    "text": "[Launch🡥] Visualize your source code. Requires graph extractors (e.g., Javapers for Java or Csharpers for C#) to generate a JSON file as input for ClassViz, and optionally Arcana for enrichment."
   },
   {
     "objectID": "sw-analysis.html#classviz",
     "href": "sw-analysis.html#classviz",
     "title": "Software Analysis",
     "section": "",
-    "text": "[🡥] Visualize your source code. Requires graph extractors (e.g., Javapers for Java or Csharpers for C#) to generate a JSON file as input for ClassViz, and optionally Arcana for enrichment."
+    "text": "[Launch🡥] Visualize your source code. Requires graph extractors (e.g., Javapers for Java or Csharpers for C#) to generate a JSON file as input for ClassViz, and optionally Arcana for enrichment."
   },
   {
     "objectID": "sw-analysis.html#javapers",
     "href": "sw-analysis.html#javapers",
     "title": "Software Analysis",
     "section": "Javapers",
-    "text": "Javapers\n[🡥]"
+    "text": "Javapers\n[Code🡥]"
   },
   {
     "objectID": "sw-analysis.html#csharpers",
     "href": "sw-analysis.html#csharpers",
     "title": "Software Analysis",
     "section": "Csharpers",
-    "text": "Csharpers\n[🡥]"
+    "text": "Csharpers\n[Code🡥]"
   },
   {
     "objectID": "sw-analysis.html#arcana",
     "href": "sw-analysis.html#arcana",
     "title": "Software Analysis",
     "section": "Arcana",
-    "text": "Arcana\n[🡥]"
+    "text": "Arcana\n[Code🡥]"
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Home",
     "section": "",
-    "text": "Welcome to my home page.\nI am a PhD researcher at the Software Engineering & Technology group, TU Eindhoven. I received my master’s degree from the Informatics program, Institut Teknologi Bandung.\nMy academic parents are prof.dr. Michel Chaudron and dr. Lina Ochoa.\nEmail me at s.a.rukmono at the domain where I am doing my PhD (for research thingies) or satrio at the domain rukmono.id (for other things).\nFeel free to browse around!"
+    "text": "Welcome to my home page.\nI am a PhD researcher at the Software Engineering & Technology group, TU Eindhoven, working on automated software architecture explanation. I received my master’s degree from the Informatics program, Institut Teknologi Bandung.\nMy academic parents are prof.dr. Michel Chaudron and dr. Lina Ochoa.\nEmail me at s.a.rukmono at the domain tue.nl (for research thingies) or satrio at the domain rukmono.id (for other things). You can also find me on GitHub\nFeel free to browse around!"
   },
   {
     "objectID": "apps.html",
     "href": "apps.html",
     "title": "Apps",
     "section": "",
-    "text": "[🡥] A Unicode character viewer to help you find the character you need and easily copy it to the clipboard."
+    "text": "[Download🡥] A Unicode character viewer to help you find the character you need and easily copy it to the clipboard."
   },
   {
     "objectID": "apps.html#character-viewer",
     "href": "apps.html#character-viewer",
     "title": "Apps",
     "section": "",
-    "text": "[🡥] A Unicode character viewer to help you find the character you need and easily copy it to the clipboard."
+    "text": "[Download🡥] A Unicode character viewer to help you find the character you need and easily copy it to the clipboard."
   },
   {
     "objectID": "apps.html#copy-pad",
     "href": "apps.html#copy-pad",
     "title": "Apps",
     "section": "Copy-Pad",
-    "text": "Copy-Pad\n[🡥] A simple web app that lets you add, organize, and copy multiple pieces of text with ease. You can add texts, organize them using checkboxes, and copy selected texts to your clipboard, all in a minimalistic interface."
+    "text": "Copy-Pad\n[Launch🡥] A simple web app that lets you add, organize, and copy multiple pieces of text with ease. You can add texts, organize them using checkboxes, and copy selected texts to your clipboard, all in a minimalistic interface."
   },
   {
     "objectID": "publications.html",

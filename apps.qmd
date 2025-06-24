@@ -4,12 +4,12 @@ title: "Apps"
 
 ## Character Viewer
 
-[[🡥]](https://github.com/rsatrioadi/character-viewer/releases) A Unicode character viewer to help you find the character you need and easily copy it to the clipboard.
+[[Download🡥]](https://github.com/rsatrioadi/character-viewer/releases) A Unicode character viewer to help you find the character you need and easily copy it to the clipboard.
 
 ![](figures/software/charview.png){fig-alt="Character Viewer screenshot." fig-align="left" width=300}
 
 ## Copy-Pad
 
-[[🡥]](http://satrio.rukmono.id/Copy-Pad/) A simple web app that lets you add, organize, and copy multiple pieces of text with ease. You can add texts, organize them using checkboxes, and copy selected texts to your clipboard, all in a minimalistic interface.
+[[Launch🡥]](http://satrio.rukmono.id/Copy-Pad/) A simple web app that lets you add, organize, and copy multiple pieces of text with ease. You can add texts, organize them using checkboxes, and copy selected texts to your clipboard, all in a minimalistic interface.
 
 ![](figures/software/copy-pad.jpg){fig-alt="Copy-Pad screenshot." fig-align="left" width=300}

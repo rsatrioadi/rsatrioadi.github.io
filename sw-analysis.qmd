@@ -4,18 +4,18 @@ title: "Software Analysis"
 
 ## ClassViz
 
-[[🡥]](https://satrio.rukmono.id/classviz) Visualize your source code. Requires graph extractors (e.g., [Javapers](software.html#javapers) for Java or [Csharpers](software.html#chsarpers) for C#) to generate a JSON file as input for ClassViz, and optionally [Arcana](software.html#arcana) for enrichment.
+[[Launch🡥]](https://satrio.rukmono.id/classviz) Visualize your source code. Requires graph extractors (e.g., [Javapers](software.html#javapers) for Java or [Csharpers](software.html#chsarpers) for C#) to generate a JSON file as input for ClassViz, and optionally [Arcana](software.html#arcana) for enrichment.
 
 ![](figures/software/classviz.png){fig-alt="ClassViz screenshot." fig-align="left" width=600}
 
 ## Javapers
 
-[[🡥]](https://github.com/rsatrioadi/javapers)
+[[Code🡥]](https://github.com/rsatrioadi/javapers)
 
 ## Csharpers
 
-[[🡥]](https://github.com/rsatrioadi/csharpers)
+[[Code🡥]](https://github.com/rsatrioadi/csharpers)
 
 ## Arcana
 
-[[🡥]](https://github.com/rsatrioadi/arcana)
+[[Code🡥]](https://github.com/rsatrioadi/arcana)
