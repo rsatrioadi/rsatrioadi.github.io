@@ -10,6 +10,6 @@ I am a PhD researcher at the [Software Engineering & Technology group](https://s
 
 My academic parents are [prof.dr. Michel Chaudron](https://www.linkedin.com/in/michelchaudron/) and [dr. Lina Ochoa](https://www.linkedin.com/in/lina-ochoa-0b1ab73a/).
 
-Email me at `s.a.rukmono` at the domain `tue.nl` (for research thingies) or `satrio` at the domain `rukmono.id` (for other things). You can also find me on [GitHub](https://github.com/rsatrioadi)
+Email me at `s.a.rukmono` at the domain `tue.nl` (for research thingies) or `satrio` at the domain `rukmono.id` (for other things). You can also find me on [GitHub](https://github.com/rsatrioadi).
 
 Feel free to browse around!
